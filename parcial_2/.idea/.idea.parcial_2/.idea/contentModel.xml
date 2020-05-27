@@ -8,9 +8,21 @@
       <e p="parcial_2" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ChangePassword.cs" t="Include" />
+        <e p="ChangePassword.Designer.cs" t="Include" />
+        <e p="Desing" t="Include">
+          <e p="MainAdministrador.cs" t="Include" />
+          <e p="MainAdministrador.Designer.cs" t="Include" />
+          <e p="MainAdministrador.resx" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
+          <e p="MainMenu.Designer.cs" t="Include" />
+          <e p="MainMenu.resx" t="Include" />
+        </e>
         <e p="Form1.cs" t="Include" />
         <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="parcial_2.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -20,8 +32,23 @@
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
         </e>
+        <e p="Resources" t="Include">
+          <e p="banquetechina.jpg" t="Include" />
+          <e p="china_woklogo.jpg" t="Include" />
+          <e p="Hugo_imagen.png" t="Include" />
+          <e p="hugos.png" t="Include" />
+          <e p="imagen_pizza.jpg" t="Include" />
+          <e p="logo_pizzahut.png" t="Include" />
+          <e p="pizza_imagen2.jpg" t="Include" />
+        </e>
         <e p="SourceCode" t="Include">
+          <e p="Business.cs" t="Include" />
+          <e p="BusinessDao.cs" t="Include" />
           <e p="ConnectionBD.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="ProductDao.cs" t="Include" />
+          <e p="UserDao.cs" t="Include" />
+          <e p="Usuario.cs" t="Include" />
         </e>
       </e>
       <e p="parcial_2.sln" t="IncludeFlat" />
