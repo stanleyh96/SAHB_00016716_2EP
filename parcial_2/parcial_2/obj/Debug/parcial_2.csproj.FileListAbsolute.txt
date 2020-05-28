@@ -1,5 +1,12 @@
 C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.csprojAssemblyReference.cache
 C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.exe.config
+C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.ChangePassword.resources
+C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Desing.AddBusiness.resources
+C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Desing.AddProduct.resources
+C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Desing.AddUser.resources
+C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Desing.EliminateBusiness.resources
+C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Desing.EliminateProduct.resources
+C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Desing.EliminateUser.resources
 C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Desing.MainAdministrador.resources
 C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Desing.MainMenu.resources
 C:\Users\Stanley\Documents\githubb\SAHB_00016716_2EP\parcial_2\parcial_2\obj\Debug\parcial_2.Form1.resources

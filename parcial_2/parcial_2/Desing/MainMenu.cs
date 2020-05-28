@@ -51,9 +51,7 @@ namespace parcial_2.Desing
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var query=ConnectionBD.ExecuteQuery($"select * from apporder where ")
-            ConnectionBD.ExecuteNonQuery($"INSERT INTO APPORDER(createDate, idProduct, idAddress,activo)
-            VALUES({DateTime.Now}, 1, 1,true)");
+           
         }
         
         private void buttonverpedido_Click(object sender, EventArgs e)
@@ -69,7 +67,7 @@ namespace parcial_2.Desing
                     var dt =
                         ConnectionBD.ExecuteQuery("select o.idOrder,p.name,o.createdate,b.name,a.address  from address a,apporder o,business b,product p,APPUSER u "+
                         $"\n\twhere a.idAddress=o.idOrder \n\tand o.idProduct=p.idProduct\n\tand p.idBusiness=b.idBusiness\n\tand a.idUser=u.idUser "+
-                       $" \n\tand u.username= '{textBox1.Text.ToString()}' and o.activo=true");
+                       $" \n\tand u.username= '{textBoxusuario.Text.ToString()}' and o.activo=true");
                             dataGridView1.DataSource = dt;
                     MessageBox.Show("Datos obtenidos exitosamente");
                 }

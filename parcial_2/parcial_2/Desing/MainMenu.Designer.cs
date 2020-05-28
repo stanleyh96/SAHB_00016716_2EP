@@ -31,9 +31,14 @@ namespace parcial_2.Desing
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources =
+                new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxfecha = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxdireccion = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,9 +58,6 @@ namespace parcial_2.Desing
             this.buttoneliminar = new System.Windows.Forms.Button();
             this.buttonverpedido = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBoxfecha = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox2)).BeginInit();
@@ -116,6 +118,39 @@ namespace parcial_2.Desing
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Realizar pedido";
             // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label8.ForeColor = System.Drawing.Color.Indigo;
+            this.label8.Location = new System.Drawing.Point(390, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 52);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Fecha:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label6.ForeColor = System.Drawing.Color.Indigo;
+            this.label6.Location = new System.Drawing.Point(402, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(110, 52);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Menu:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxfecha
+            // 
+            this.textBoxfecha.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxfecha.Location = new System.Drawing.Point(521, 102);
+            this.textBoxfecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxfecha.Name = "textBoxfecha";
+            this.textBoxfecha.Size = new System.Drawing.Size(220, 27);
+            this.textBoxfecha.TabIndex = 12;
+            // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular,
@@ -139,7 +174,7 @@ namespace parcial_2.Desing
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(576, 183);
+            this.button1.Location = new System.Drawing.Point(576, 182);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 46);
@@ -321,39 +356,6 @@ namespace parcial_2.Desing
             this.dataGridView1.Size = new System.Drawing.Size(776, 315);
             this.dataGridView1.TabIndex = 0;
             // 
-            // textBoxfecha
-            // 
-            this.textBoxfecha.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxfecha.Location = new System.Drawing.Point(521, 102);
-            this.textBoxfecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxfecha.Name = "textBoxfecha";
-            this.textBoxfecha.Size = new System.Drawing.Size(220, 27);
-            this.textBoxfecha.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label6.ForeColor = System.Drawing.Color.Indigo;
-            this.label6.Location = new System.Drawing.Point(402, 22);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 52);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Menu:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label8.ForeColor = System.Drawing.Color.Indigo;
-            this.label8.Location = new System.Drawing.Point(390, 86);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 52);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Fecha:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -362,9 +364,10 @@ namespace parcial_2.Desing
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(800, 562);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainMenu";
-            this.Text = "MainMenu";
+            this.Text = "Hugo-Menu";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
