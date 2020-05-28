@@ -84,6 +84,7 @@ namespace parcial_2.Desing
             this.buttoneliminar.TabIndex = 1;
             this.buttoneliminar.Text = "Eliminar";
             this.buttoneliminar.UseVisualStyleBackColor = true;
+            this.buttoneliminar.Click += new System.EventHandler(this.buttoneliminar_Click);
             // 
             // label1
             // 
@@ -106,6 +107,7 @@ namespace parcial_2.Desing
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "EliminateUser";
             this.Size = new System.Drawing.Size(808, 512);
+            this.Load += new System.EventHandler(this.EliminateUser_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
         }

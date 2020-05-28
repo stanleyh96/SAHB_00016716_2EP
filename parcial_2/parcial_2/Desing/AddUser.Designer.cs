@@ -35,10 +35,10 @@ namespace parcial_2.Desing
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBoxnamecomplete = new System.Windows.Forms.TextBox();
+            this.textBoxnameuser = new System.Windows.Forms.TextBox();
+            this.textBoxpassword = new System.Windows.Forms.TextBox();
+            this.comboBoxadmi = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -56,10 +56,10 @@ namespace parcial_2.Desing
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxnamecomplete, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxnameuser, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxpassword, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.comboBoxadmi, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -110,44 +110,44 @@ namespace parcial_2.Desing
             this.label2.Text = "Nombre de usuario:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // textBoxnamecomplete
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Location = new System.Drawing.Point(378, 35);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 27);
-            this.textBox1.TabIndex = 0;
+            this.textBoxnamecomplete.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBoxnamecomplete.Location = new System.Drawing.Point(378, 35);
+            this.textBoxnamecomplete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxnamecomplete.Name = "textBoxnamecomplete";
+            this.textBoxnamecomplete.Size = new System.Drawing.Size(264, 27);
+            this.textBoxnamecomplete.TabIndex = 0;
             // 
-            // textBox2
+            // textBoxnameuser
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.Location = new System.Drawing.Point(378, 133);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(264, 27);
-            this.textBox2.TabIndex = 1;
+            this.textBoxnameuser.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBoxnameuser.Location = new System.Drawing.Point(378, 133);
+            this.textBoxnameuser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxnameuser.Name = "textBoxnameuser";
+            this.textBoxnameuser.Size = new System.Drawing.Size(264, 27);
+            this.textBoxnameuser.TabIndex = 1;
             // 
-            // textBox3
+            // textBoxpassword
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Location = new System.Drawing.Point(378, 231);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 27);
-            this.textBox3.TabIndex = 2;
+            this.textBoxpassword.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBoxpassword.Location = new System.Drawing.Point(378, 231);
+            this.textBoxpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxpassword.Name = "textBoxpassword";
+            this.textBoxpassword.Size = new System.Drawing.Size(213, 27);
+            this.textBoxpassword.TabIndex = 2;
             // 
-            // comboBox1
+            // comboBoxadmi
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {"true", "false"});
-            this.comboBox1.Location = new System.Drawing.Point(378, 329);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 28);
-            this.comboBox1.TabIndex = 3;
+            this.comboBoxadmi.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxadmi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxadmi.FormattingEnabled = true;
+            this.comboBoxadmi.Items.AddRange(new object[] {"true", "false"});
+            this.comboBoxadmi.Location = new System.Drawing.Point(378, 329);
+            this.comboBoxadmi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxadmi.Name = "comboBoxadmi";
+            this.comboBoxadmi.Size = new System.Drawing.Size(174, 28);
+            this.comboBoxadmi.TabIndex = 3;
             // 
             // label1
             // 
@@ -163,12 +163,14 @@ namespace parcial_2.Desing
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.Location = new System.Drawing.Point(378, 395);
+            this.button1.Location = new System.Drawing.Point(378, 394);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 49);
             this.button1.TabIndex = 8;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AddUser
             // 
@@ -179,6 +181,7 @@ namespace parcial_2.Desing
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AddUser";
             this.Size = new System.Drawing.Size(879, 514);
+            //this.Load += new System.EventHandler(this.AddUser_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -187,14 +190,19 @@ namespace parcial_2.Desing
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBoxadmi;
+        private System.Windows.Forms.TextBox textBoxnamecomplete;
+        private System.Windows.Forms.TextBox textBoxnameuser;
+        private System.Windows.Forms.TextBox textBoxpassword;
     }
+}
+
+namespace System.Windows.Forms
+{
+    
 }

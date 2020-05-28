@@ -32,8 +32,8 @@ namespace parcial_2.Desing
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxnombreproduct = new System.Windows.Forms.TextBox();
             this.button1agregar = new System.Windows.Forms.Button();
+            this.textBoxnombreproduct = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxempresa = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -71,6 +71,19 @@ namespace parcial_2.Desing
             this.tableLayoutPanel1.Size = new System.Drawing.Size(801, 612);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // button1agregar
+            // 
+            this.button1agregar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F,
+                System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button1agregar.Location = new System.Drawing.Point(343, 461);
+            this.button1agregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1agregar.Name = "button1agregar";
+            this.button1agregar.Size = new System.Drawing.Size(183, 52);
+            this.button1agregar.TabIndex = 1;
+            this.button1agregar.Text = "Agregar";
+            this.button1agregar.UseVisualStyleBackColor = true;
+            this.button1agregar.Click += new System.EventHandler(this.button1agregar_Click);
+            // 
             // textBoxnombreproduct
             // 
             this.textBoxnombreproduct.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -79,17 +92,6 @@ namespace parcial_2.Desing
             this.textBoxnombreproduct.Name = "textBoxnombreproduct";
             this.textBoxnombreproduct.Size = new System.Drawing.Size(271, 31);
             this.textBoxnombreproduct.TabIndex = 0;
-            // 
-            // button1agregar
-            // 
-            this.button1agregar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F,
-                System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1agregar.Location = new System.Drawing.Point(343, 462);
-            this.button1agregar.Name = "button1agregar";
-            this.button1agregar.Size = new System.Drawing.Size(183, 53);
-            this.button1agregar.TabIndex = 1;
-            this.button1agregar.Text = "Agregar";
-            this.button1agregar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -108,7 +110,8 @@ namespace parcial_2.Desing
             this.comboBoxempresa.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBoxempresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxempresa.FormattingEnabled = true;
-            this.comboBoxempresa.Location = new System.Drawing.Point(343, 209);
+            this.comboBoxempresa.Location = new System.Drawing.Point(343, 213);
+            this.comboBoxempresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxempresa.Name = "comboBoxempresa";
             this.comboBoxempresa.Size = new System.Drawing.Size(240, 33);
             this.comboBoxempresa.TabIndex = 3;
@@ -134,6 +137,7 @@ namespace parcial_2.Desing
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AddProduct";
             this.Size = new System.Drawing.Size(801, 612);
+            this.Load += new System.EventHandler(this.AddProduct_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

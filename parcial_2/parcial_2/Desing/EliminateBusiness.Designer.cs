@@ -51,6 +51,7 @@ namespace parcial_2.Desing
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(
@@ -65,7 +66,8 @@ namespace parcial_2.Desing
             this.comboBoxBusiness.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBoxBusiness.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxBusiness.FormattingEnabled = true;
-            this.comboBoxBusiness.Location = new System.Drawing.Point(352, 102);
+            this.comboBoxBusiness.Location = new System.Drawing.Point(353, 122);
+            this.comboBoxBusiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxBusiness.Name = "comboBoxBusiness";
             this.comboBoxBusiness.Size = new System.Drawing.Size(253, 28);
             this.comboBoxBusiness.TabIndex = 0;
@@ -76,7 +78,8 @@ namespace parcial_2.Desing
             this.buttonEliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.buttonEliminar.Location = new System.Drawing.Point(352, 379);
+            this.buttonEliminar.Location = new System.Drawing.Point(353, 379);
+            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(205, 61);
             this.buttonEliminar.TabIndex = 1;
@@ -88,7 +91,7 @@ namespace parcial_2.Desing
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(90, 113);
+            this.label1.Location = new System.Drawing.Point(91, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 46);
             this.label1.TabIndex = 2;

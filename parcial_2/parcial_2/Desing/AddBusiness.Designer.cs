@@ -32,11 +32,11 @@ namespace parcial_2.Desing
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBoxnombre = new System.Windows.Forms.TextBox();
             this.textBoxdescripcion = new System.Windows.Forms.TextBox();
             this.buttonagregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,7 @@ namespace parcial_2.Desing
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(
@@ -66,12 +67,25 @@ namespace parcial_2.Desing
             this.tableLayoutPanel1.Size = new System.Drawing.Size(902, 638);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label2.Location = new System.Drawing.Point(117, 289);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 49);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Descripcion:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // textBoxnombre
             // 
             this.textBoxnombre.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom |
                                                        System.Windows.Forms.AnchorStyles.Left)));
-            this.textBoxnombre.Location = new System.Drawing.Point(391, 179);
+            this.textBoxnombre.Location = new System.Drawing.Point(390, 180);
+            this.textBoxnombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxnombre.Name = "textBoxnombre";
             this.textBoxnombre.Size = new System.Drawing.Size(214, 27);
             this.textBoxnombre.TabIndex = 0;
@@ -79,7 +93,8 @@ namespace parcial_2.Desing
             // textBoxdescripcion
             // 
             this.textBoxdescripcion.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBoxdescripcion.Location = new System.Drawing.Point(391, 300);
+            this.textBoxdescripcion.Location = new System.Drawing.Point(390, 300);
+            this.textBoxdescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxdescripcion.Name = "textBoxdescripcion";
             this.textBoxdescripcion.Size = new System.Drawing.Size(214, 27);
             this.textBoxdescripcion.TabIndex = 1;
@@ -88,9 +103,10 @@ namespace parcial_2.Desing
             // 
             this.buttonagregar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.buttonagregar.Location = new System.Drawing.Point(391, 421);
+            this.buttonagregar.Location = new System.Drawing.Point(390, 420);
+            this.buttonagregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonagregar.Name = "buttonagregar";
-            this.buttonagregar.Size = new System.Drawing.Size(157, 63);
+            this.buttonagregar.Size = new System.Drawing.Size(157, 62);
             this.buttonagregar.TabIndex = 2;
             this.buttonagregar.Text = "Agregar";
             this.buttonagregar.UseVisualStyleBackColor = true;
@@ -106,18 +122,6 @@ namespace parcial_2.Desing
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label2.Location = new System.Drawing.Point(117, 289);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 49);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Descripcion:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AddBusiness
             // 
