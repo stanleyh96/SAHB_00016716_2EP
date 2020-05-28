@@ -216,8 +216,11 @@
     <ItemGroup>
       <Content Include="Resources\banquetechina.jpg" />
       <Content Include="Resources\china_woklogo.jpg" />
+      <Content Include="Resources\hugodiscu.jpg" />
       <Content Include="Resources\hugos.png" />
       <Content Include="Resources\Hugo_imagen.png" />
+      <Content Include="Resources\Hugo_imagen1.png" />
+      <Content Include="Resources\hugo_logo.gif" />
       <Content Include="Resources\imagen_pizza.jpg" />
       <Content Include="Resources\logo_pizzahut.png" />
       <Content Include="Resources\pizza_imagen2.jpg" />

@@ -8,7 +8,7 @@ namespace parcial_2.SourceCode
     {
         public static List<Product> getLista()
         {
-            string sql = "select * from PRODUCT";
+            string sql = "select * from PRODUCT ";
 
             DataTable dt = ConnectionBD.ExecuteQuery(sql);
 

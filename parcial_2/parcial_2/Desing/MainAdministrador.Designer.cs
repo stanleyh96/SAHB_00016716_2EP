@@ -11,8 +11,8 @@ namespace parcial_2.Desing
 
         /// <summary>
         /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -351,7 +351,7 @@ namespace parcial_2.Desing
             this.ResumeLayout(false);
         }
 
-        #endregion;
+        #endregion
 
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage2;

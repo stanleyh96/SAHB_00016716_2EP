@@ -8,7 +8,7 @@ namespace parcial_2.SourceCode
     {
         public static List<Usuario> getLista()
         {
-            string sql = "select * from APPUSER";
+            string sql = "select * from APPUSER where activo=true";
 
             DataTable dt = ConnectionBD.ExecuteQuery(sql);
 

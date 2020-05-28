@@ -51,6 +51,7 @@ namespace parcial_2.Desing
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(
@@ -65,26 +66,33 @@ namespace parcial_2.Desing
             this.comboBoxproduct.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxproduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxproduct.FormattingEnabled = true;
-            this.comboBoxproduct.Location = new System.Drawing.Point(453, 104);
+            this.comboBoxproduct.Location = new System.Drawing.Point(452, 126);
+            this.comboBoxproduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxproduct.Name = "comboBoxproduct";
             this.comboBoxproduct.Size = new System.Drawing.Size(261, 28);
             this.comboBoxproduct.TabIndex = 0;
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(341, 284);
+            this.buttonEliminar.BackColor = System.Drawing.Color.Indigo;
+            this.buttonEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.buttonEliminar.ForeColor = System.Drawing.Color.White;
+            this.buttonEliminar.Location = new System.Drawing.Point(340, 283);
+            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(184, 56);
             this.buttonEliminar.TabIndex = 1;
-            this.buttonEliminar.Text = "button1";
-            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = false;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(126, 113);
+            this.label1.Location = new System.Drawing.Point(125, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 54);
             this.label1.TabIndex = 2;
@@ -100,6 +108,7 @@ namespace parcial_2.Desing
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "EliminateProduct";
             this.Size = new System.Drawing.Size(829, 562);
+            this.Load += new System.EventHandler(this.EliminateProduct_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
         }

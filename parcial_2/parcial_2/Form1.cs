@@ -44,7 +44,7 @@ namespace parcial_2
                 {
 
                     MessageBox.Show("¡Bienvenido!",
-                        "CellphoneStore", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        "Hugo-Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     MainMenu ventana = new MainMenu(u);
                     ventana.Show(this);
@@ -53,7 +53,7 @@ namespace parcial_2
                 else if (u.userType==true)
                 {
                     MessageBox.Show("¡Bienvenido!",
-                        "CellphoneStore", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        "HUGO-Administrador", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     MainAdministrador ventana = new MainAdministrador();
                     ventana.Show();
                     this.Hide();

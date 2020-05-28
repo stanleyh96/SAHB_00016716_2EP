@@ -46,7 +46,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pictureBox1.BackgroundImage = global::parcial_2.Properties.Resources.Hugo_imagen;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(187, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(135, 28);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(255, 189);
@@ -79,10 +79,10 @@
             this.buttoncambiarcontra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.buttoncambiarcontra.ForeColor = System.Drawing.Color.White;
-            this.buttoncambiarcontra.Location = new System.Drawing.Point(123, 466);
+            this.buttoncambiarcontra.Location = new System.Drawing.Point(56, 466);
             this.buttoncambiarcontra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttoncambiarcontra.Name = "buttoncambiarcontra";
-            this.buttoncambiarcontra.Size = new System.Drawing.Size(140, 55);
+            this.buttoncambiarcontra.Size = new System.Drawing.Size(186, 55);
             this.buttoncambiarcontra.TabIndex = 3;
             this.buttoncambiarcontra.Text = "Cambiar contraseña";
             this.buttoncambiarcontra.UseVisualStyleBackColor = false;
@@ -96,10 +96,10 @@
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(325, 466);
+            this.button2.Location = new System.Drawing.Point(271, 466);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 55);
+            this.button2.Size = new System.Drawing.Size(206, 55);
             this.button2.TabIndex = 4;
             this.button2.Text = "Iniciar sesion";
             this.button2.UseVisualStyleBackColor = false;
@@ -109,7 +109,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(123, 282);
+            this.label1.Location = new System.Drawing.Point(112, 282);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 44);
             this.label1.TabIndex = 5;
@@ -133,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(634, 608);
+            this.ClientSize = new System.Drawing.Size(551, 608);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -141,9 +141,11 @@
             this.Controls.Add(this.textBoxcontra);
             this.Controls.Add(this.comboBoxuser);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesion";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();

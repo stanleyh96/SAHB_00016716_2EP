@@ -36,9 +36,7 @@ namespace parcial_2.Desing
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxfecha = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxdireccion = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -83,6 +81,8 @@ namespace parcial_2.Desing
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = global::parcial_2.Properties.Resources.hugo_logo;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
@@ -96,9 +96,7 @@ namespace parcial_2.Desing
             // 
             this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.textBoxfecha);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.textBoxdireccion);
             this.tabPage2.Controls.Add(this.button1);
@@ -118,38 +116,17 @@ namespace parcial_2.Desing
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Realizar pedido";
             // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label8.ForeColor = System.Drawing.Color.Indigo;
-            this.label8.Location = new System.Drawing.Point(390, 86);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 52);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Fecha:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label6.ForeColor = System.Drawing.Color.Indigo;
-            this.label6.Location = new System.Drawing.Point(402, 22);
+            this.label6.Location = new System.Drawing.Point(448, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 52);
             this.label6.TabIndex = 13;
             this.label6.Text = "Menu:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBoxfecha
-            // 
-            this.textBoxfecha.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxfecha.Location = new System.Drawing.Point(521, 102);
-            this.textBoxfecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxfecha.Name = "textBoxfecha";
-            this.textBoxfecha.Size = new System.Drawing.Size(220, 27);
-            this.textBoxfecha.TabIndex = 12;
             // 
             // label7
             // 
@@ -174,20 +151,22 @@ namespace parcial_2.Desing
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(576, 182);
+            this.button1.BackColor = System.Drawing.Color.Indigo;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(546, 117);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 46);
             this.button1.TabIndex = 9;
             this.button1.Text = "Guardar pedido";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBoxmenu
             // 
             this.comboBoxmenu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxmenu.FormattingEnabled = true;
-            this.comboBoxmenu.Location = new System.Drawing.Point(533, 38);
+            this.comboBoxmenu.Location = new System.Drawing.Point(576, 46);
             this.comboBoxmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxmenu.Name = "comboBoxmenu";
             this.comboBoxmenu.Size = new System.Drawing.Size(208, 28);
@@ -229,10 +208,11 @@ namespace parcial_2.Desing
             // 
             this.pictureBox2.BackgroundImage = global::parcial_2.Properties.Resources.logo_pizzahut;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(142, 258);
+            this.pictureBox2.Location = new System.Drawing.Point(142, 232);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(109, 66);
+            this.pictureBox2.Size = new System.Drawing.Size(109, 91);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
@@ -244,6 +224,7 @@ namespace parcial_2.Desing
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -260,7 +241,7 @@ namespace parcial_2.Desing
             // 
             this.comboBoxempresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxempresa.FormattingEnabled = true;
-            this.comboBoxempresa.Location = new System.Drawing.Point(176, 102);
+            this.comboBoxempresa.Location = new System.Drawing.Point(154, 102);
             this.comboBoxempresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxempresa.Name = "comboBoxempresa";
             this.comboBoxempresa.Size = new System.Drawing.Size(208, 28);
@@ -324,24 +305,28 @@ namespace parcial_2.Desing
             // 
             // buttoneliminar
             // 
+            this.buttoneliminar.BackColor = System.Drawing.Color.Indigo;
+            this.buttoneliminar.ForeColor = System.Drawing.Color.White;
             this.buttoneliminar.Location = new System.Drawing.Point(473, 109);
             this.buttoneliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttoneliminar.Name = "buttoneliminar";
-            this.buttoneliminar.Size = new System.Drawing.Size(167, 38);
+            this.buttoneliminar.Size = new System.Drawing.Size(167, 48);
             this.buttoneliminar.TabIndex = 2;
             this.buttoneliminar.Text = "Eliminar pedido";
-            this.buttoneliminar.UseVisualStyleBackColor = true;
+            this.buttoneliminar.UseVisualStyleBackColor = false;
             this.buttoneliminar.Click += new System.EventHandler(this.buttoneliminar_Click);
             // 
             // buttonverpedido
             // 
-            this.buttonverpedido.Location = new System.Drawing.Point(179, 109);
+            this.buttonverpedido.BackColor = System.Drawing.Color.Indigo;
+            this.buttonverpedido.ForeColor = System.Drawing.Color.White;
+            this.buttonverpedido.Location = new System.Drawing.Point(165, 109);
             this.buttonverpedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonverpedido.Name = "buttonverpedido";
-            this.buttonverpedido.Size = new System.Drawing.Size(124, 38);
+            this.buttonverpedido.Size = new System.Drawing.Size(138, 48);
             this.buttonverpedido.TabIndex = 1;
             this.buttonverpedido.Text = "Ver pedidos";
-            this.buttonverpedido.UseVisualStyleBackColor = true;
+            this.buttonverpedido.UseVisualStyleBackColor = false;
             this.buttonverpedido.Click += new System.EventHandler(this.buttonverpedido_Click);
             // 
             // dataGridView1
@@ -353,7 +338,7 @@ namespace parcial_2.Desing
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 315);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 308);
             this.dataGridView1.TabIndex = 0;
             // 
             // MainMenu
@@ -367,6 +352,7 @@ namespace parcial_2.Desing
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hugo-Menu";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.tabControl1.ResumeLayout(false);
@@ -404,8 +390,6 @@ namespace parcial_2.Desing
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxID;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBoxfecha;
         private System.Windows.Forms.TextBox textBoxdireccion;
     }
 }

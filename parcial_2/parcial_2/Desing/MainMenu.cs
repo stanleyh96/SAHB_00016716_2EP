@@ -18,22 +18,24 @@ namespace parcial_2.Desing
             if (comboBoxempresa.Text.CompareTo("Pizza hut")==0)
             {
                 pictureBox2.Image = Resources.logo_pizzahut;
-                if (comboBoxmenu.Text.CompareTo("Pizza 4") == 0)
-                {
+                
+                    pictureBox1.Image = Resources.banquetechina;
                     label5.Text = "Pizza 4 con 16 porciones de un solo ingrediente" +
                                   $"Ingrediente a elegir:Tocino,Jamon y peperoni" +
                                   $"Precio: $14.99";
-                }
+                
             }else if (comboBoxempresa.Text.CompareTo("China wok")==0)
             {
                 pictureBox2.Image = Resources.china_woklogo;
-                if (comboBoxmenu.Text.CompareTo("Banquete full")==0)
-                {
-                    label5.Text = "Banquete para 4 persona con arrox frito,shaomin y cuatro bebidas personales" +
+               
+                
+                    pictureBox1.Image = Resources.banquetechina;
+                    label5.Text = "Banquete para 4 persona con arrox frito,shaomin" +
+                                  " y cuatro bebidas personales" +
                                   "Precio: $20.0";
                 }
             }
-        }
+        
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
@@ -51,8 +53,54 @@ namespace parcial_2.Desing
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            if (textBoxuser.Text.Equals("") ||
+                textBoxdireccion.Text.Equals(""))
+            {
+                MessageBox.Show("No se pueden dejar campos vacios");
+            }
+            else
+            {
+                try
+                {
+                    DateTime fecha=new DateTime();
+                    string sfecha = fecha.ToString("MM/dd/yyyy");
+                    string query2 = $"SELECT idproduct FROM product  WHERE name='{comboBoxmenu.Text.ToString()}' ";
+                    var dt2 = ConnectionBD.ExecuteQuery(query2);
+                    var dr2 = dt2.Rows[0];
+                    var idProduct = dr2[0].ToString();
+                    
+                    string query3 = $"SELECT iduser FROM appuser  WHERE username='{textBoxuser.Text.ToString()}' ";
+                    var dt3 = ConnectionBD.ExecuteQuery(query2);
+                    var dr3 = dt3.Rows[0];
+                    var idUSER = dr3[0].ToString();
+            
+                    string query = $"SELECT a.idaddress FROM ADDRESS a, APPUSER U  WHERE U.iduser=a.iduser and a.address='{textBoxdireccion.Text.ToString()}' ";
+                    var dt = ConnectionBD.ExecuteQuery(query);
+                    var dr = dt.Rows[0];
+                    var idAddres = dr[0].ToString();
+                    
+                                                
+                    ConnectionBD.ExecuteNonQuery($"INSERT INTO ADDORDER(createdate,idproduct,idaddress,activo) VALUES( " +
+                                                 $"'{sfecha}' , " +
+                                                 $"{idProduct} , " +
+                                                 $"{idAddres}, " +
+                                                 $"{true} " );
+                    ConnectionBD.ExecuteNonQuery($"INSERT INTO ADDRESS(iduser,address,activo)VALUES({idUSER},'{textBoxdireccion.Text.ToString()}' , " +
+                                                 $"{true} ) ");
+                    
+                    MessageBox.Show("Pedido guardado exitosamente");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Pedido guardado exitosamente");
+                }
+                             
+            }
+            
         }
+        
+        
         
         private void buttonverpedido_Click(object sender, EventArgs e)
         {
