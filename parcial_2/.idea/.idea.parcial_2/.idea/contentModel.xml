@@ -10,7 +10,26 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="ChangePassword.cs" t="Include" />
         <e p="ChangePassword.Designer.cs" t="Include" />
+        <e p="ChangePassword.resx" t="Include" />
         <e p="Desing" t="Include">
+          <e p="AddBusiness.cs" t="Include" />
+          <e p="AddBusiness.Designer.cs" t="Include" />
+          <e p="AddBusiness.resx" t="Include" />
+          <e p="AddProduct.cs" t="Include" />
+          <e p="AddProduct.Designer.cs" t="Include" />
+          <e p="AddProduct.resx" t="Include" />
+          <e p="AddUser.cs" t="Include" />
+          <e p="AddUser.Designer.cs" t="Include" />
+          <e p="AddUser.resx" t="Include" />
+          <e p="EliminateBusiness.cs" t="Include" />
+          <e p="EliminateBusiness.Designer.cs" t="Include" />
+          <e p="EliminateBusiness.resx" t="Include" />
+          <e p="EliminateProduct.cs" t="Include" />
+          <e p="EliminateProduct.Designer.cs" t="Include" />
+          <e p="EliminateProduct.resx" t="Include" />
+          <e p="EliminateUser.cs" t="Include" />
+          <e p="EliminateUser.Designer.cs" t="Include" />
+          <e p="EliminateUser.resx" t="Include" />
           <e p="MainAdministrador.cs" t="Include" />
           <e p="MainAdministrador.Designer.cs" t="Include" />
           <e p="MainAdministrador.resx" t="Include" />

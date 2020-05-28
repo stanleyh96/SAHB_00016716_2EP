@@ -94,6 +94,42 @@
         <Compile Include="ChangePassword.Designer.cs">
           <DependentUpon>ChangePassword.cs</DependentUpon>
         </Compile>
+        <Compile Include="Desing\AddBusiness.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Desing\AddBusiness.Designer.cs">
+          <DependentUpon>AddBusiness.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Desing\AddProduct.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Desing\AddProduct.Designer.cs">
+          <DependentUpon>AddProduct.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Desing\AddUser.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Desing\AddUser.Designer.cs">
+          <DependentUpon>AddUser.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Desing\EliminateBusiness.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Desing\EliminateBusiness.Designer.cs">
+          <DependentUpon>EliminateBusiness.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Desing\EliminateProduct.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Desing\EliminateProduct.Designer.cs">
+          <DependentUpon>EliminateProduct.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Desing\EliminateUser.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Desing\EliminateUser.Designer.cs">
+          <DependentUpon>EliminateUser.cs</DependentUpon>
+        </Compile>
         <Compile Include="Desing\MainAdministrador.cs">
           <SubType>Form</SubType>
         </Compile>
@@ -121,6 +157,27 @@
         <Compile Include="SourceCode\ProductDao.cs" />
         <Compile Include="SourceCode\UserDao.cs" />
         <Compile Include="SourceCode\Usuario.cs" />
+        <EmbeddedResource Include="ChangePassword.resx">
+          <DependentUpon>ChangePassword.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Desing\AddBusiness.resx">
+          <DependentUpon>AddBusiness.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Desing\AddProduct.resx">
+          <DependentUpon>AddProduct.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Desing\AddUser.resx">
+          <DependentUpon>AddUser.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Desing\EliminateBusiness.resx">
+          <DependentUpon>EliminateBusiness.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Desing\EliminateProduct.resx">
+          <DependentUpon>EliminateProduct.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Desing\EliminateUser.resx">
+          <DependentUpon>EliminateUser.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Desing\MainAdministrador.resx">
           <DependentUpon>MainAdministrador.cs</DependentUpon>
         </EmbeddedResource>
