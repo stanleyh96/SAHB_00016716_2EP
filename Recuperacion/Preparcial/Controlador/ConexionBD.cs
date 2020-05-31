@@ -6,11 +6,12 @@ namespace Preparcial.Controlador
     public static class ConexionBD
     {
         // Cadena de conexion
+        //Correpcion: cambiando ka cadena de conexion en dATABASE
         private static string cadenaC = "Server=127.0.0.1;" +
                                         "Port=5432;" +
                                         "UserId=postgres;" +
                                         "Password=uca;" +
-                                        "Database=pre-parcial;";
+                                        "Database=reposicion;";
 
         // Ejecutar consulta (Comando SELECT)
         public static DataTable EjecutarConsulta(string consulta)

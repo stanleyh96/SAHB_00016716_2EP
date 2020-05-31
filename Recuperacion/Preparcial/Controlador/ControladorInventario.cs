@@ -61,11 +61,12 @@ namespace Preparcial.Controlador
         }
 
         // Metodo para anadir productos
-        public static void AnadirProducto(string nombre, string descripcion, string precio, string stock)
+        public static void AnadirProducto(string nombre, string descripcion, double precio, int stock)
         {
             try
             {
-                ConexionBD.EjecutarComando("INSERT INTO INVENTARIO(nombreArticulo, descripcion, precio, stock)" +
+                //Correpcion: modificando la columna nombreArticulo a nombreArt
+                ConexionBD.EjecutarComando("INSERT INTO INVENTARIO(nombreArt, descripcion, precio, stock)" +
                     $" VALUES('{nombre}', '{descripcion}', {precio}, {stock})");
 
                 MessageBox.Show("Se ha agregado el producto");

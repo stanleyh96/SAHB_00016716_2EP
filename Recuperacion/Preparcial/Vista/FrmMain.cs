@@ -43,22 +43,30 @@ namespace Preparcial.Vista
         private void ActualizarOrdenesUsuario()
         {
             dgvMyOrders.DataSource = ControladorPedido.GetPedidosUsuarioTable(u.IdUsuario);
-            cmbProductMakeOrder.ValueMember = "idarticulo";
+            cmbProductMakeOrder.DataSource = null;
+            cmbProductMakeOrder.ValueMember = "idArticulo";
             cmbProductMakeOrder.DisplayMember = "producto";
             cmbProductMakeOrder.DataSource = ControladorInventario.GetProductos();
         }
 
         private void bttnAddInventary_Click(object sender, EventArgs e)
         {
-            if (txtProductNameInventary.Text.Equals("") &&
-                txtDescriptionInventary.Text.Equals("") &&
-                txtPriceInventary.Text.Equals("") &&
+            //Correpcion:cambiando de string al varibale double e int a stock y precio
+            int stock = 0;
+            double precio = 0;
+            
+            precio = Convert.ToDouble(txtPriceInventary.Text);
+            stock = Convert.ToInt32(txtStockInventary.Text);
+            
+            if (txtProductNameInventary.Text.Equals("") ||
+                txtDescriptionInventary.Text.Equals("")  ||
+                txtPriceInventary.Text.Equals("") ||
                 txtStockInventary.Text.Equals(""))
                 MessageBox.Show("No puede dejar campos vacios");
             else
             {
-                ControladorInventario.AnadirProducto(txtProductNameInventary.Text, txtDescriptionInventary.Text,
-                    txtPriceInventary.Text, txtStockInventary.Text);
+                ControladorInventario.AnadirProducto(txtProductNameInventary.Text
+                    , txtDescriptionInventary.Text, precio, stock);
 
                 ActualizarInventario();
             }
@@ -92,36 +100,41 @@ namespace Preparcial.Vista
                 MessageBox.Show("No puede dejar campos vacios");
             else
             {
-                ControladorPedido.HacerPedido(u.IdUsuario, cmbProductMakeOrder.SelectedValue.ToString(), txtMakeOrderQuantity.Text);
+                //correpcion:convirtiendo  a enteros los valores 
+                ControladorPedido.HacerPedido(Convert.ToInt32(u.IdUsuario), Convert.ToInt32(cmbProductMakeOrder.SelectedValue.ToString()), 
+                    Convert.ToInt32(txtMakeOrderQuantity.Text));
                 ActualizarOrdenesUsuario();
             }
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (tabControl1.SelectedTab.Name.Equals("createNewUserTab") && u.Admin)
-                ActualizarCrearUsuario();
-
-            else if (tabControl1.SelectedTab.Name.Equals("inventaryTab") && u.Admin)
-                ActualizarInventario();
-
-            else if (tabControl1.SelectedTab.Name.Equals("createOrderTab") && !u.Admin)
-                ActualizarOrdenesUsuario();
-
-            else if (tabControl1.SelectedTab.Name.Equals("viewOrdersTab") && u.Admin)
-                ActualizarOrdenes();
-            
-            else
+            if (!tabControl1.SelectedTab.Name.Equals("generalTab"))
             {
-                MessageBox.Show("No tiene permisos para ver esta pestana");
-                tabControl1.SelectedTab = tabControl1.TabPages[0];
+                if (tabControl1.SelectedTab.Name.Equals("createNewUserTab") && u.Admin)
+                    ActualizarCrearUsuario();
+
+                else if (tabControl1.SelectedTab.Name.Equals("inventaryTab") && u.Admin)
+                    ActualizarInventario();
+
+                else if (tabControl1.SelectedTab.Name.Equals("createOrderTab") && !u.Admin)
+                    ActualizarOrdenesUsuario();
+
+                else if (tabControl1.SelectedTab.Name.Equals("viewOrdersTab") && u.Admin)
+                    ActualizarOrdenes();
+
+                else
+                {
+                    MessageBox.Show("No tiene permisos para ver esta pestana");
+                    tabControl1.SelectedTab = tabControl1.TabPages[0];
+                }
             }
 
         }
 
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-    Application.Exit();
+            Application.Exit();
         }
     }
 }

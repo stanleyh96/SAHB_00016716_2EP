@@ -12,7 +12,8 @@ namespace Preparcial.Controlador
 
             try
             {
-                pedidos = ConexionBD.EjecutarConsulta("SELECT p.idPedido, i.nombreArticulo, p.cantidad, i.precio, (i.precio * p.cantidad) AS total" +
+                //Correpcion: cambiando i.nombreArticulo a i.nombreArt
+                pedidos = ConexionBD.EjecutarConsulta("SELECT p.idPedido, i.nombreArt, p.cantidad, i.precio, (i.precio * p.cantidad) AS total" +
                                             " FROM PEDIDO p, INVENTARIO i, USUARIO u" +
                                             " WHERE p.idArticulo = i.idArticulo" +
                                             " AND p.idUsuario = u.idUsuario" +
@@ -32,10 +33,12 @@ namespace Preparcial.Controlador
 
             try
             {
-                pedidos = ConexionBD.EjecutarConsulta("SELECT p.idPedido, i.nombreArticulo, p.cantidad, i.precio, (i.precio * p.cantidad) AS total" +
-                                            " FROM PEDIDO p, INVENTARIO i, USUARIO u" +
-                                            " WHERE p.idArticulo = i.idArticulo" +
-                                            " AND p.idUsuario = u.idUsuario");
+                //Correpcion:cambiando nombre a i.nombreArt
+                pedidos = ConexionBD.EjecutarConsulta("SELECT p.idPedido, i.nombreArt, p.cantidad, i.precio, " +
+                                                      "(i.precio * p.cantidad) AS total" +
+                                                      " FROM PEDIDO p, INVENTARIO i, USUARIO u" +
+                                                      " WHERE p.idArticulo = i.idArticulo" +
+                                                      " AND p.idUsuario = u.idUsuario");
             }
             catch (Exception ex)
             {
@@ -44,11 +47,13 @@ namespace Preparcial.Controlador
 
             return pedidos;
         }
-
-        public static void HacerPedido(string idUsuario, string idArticulo, string cantidad)
+        
+        //correpcion: cambiando de string a int los parametros de la clase haer pedido
+        public static void HacerPedido(int idUsuario, int idArticulo, int cantidad)
         {
             try
             {
+                
                 ConexionBD.EjecutarComando("INSERT INTO PEDIDO(idUsuario, idArticulo, cantidad) " +
                     $"VALUES({idUsuario}, {idArticulo}, {cantidad})");
             }
@@ -57,5 +62,7 @@ namespace Preparcial.Controlador
                 MessageBox.Show("Ha ocurrido un error");
             }
         }
+
+        
     }
 }

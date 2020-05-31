@@ -91,11 +91,12 @@
             this.tabControl1.Controls.Add(this.inventaryTab);
             this.tabControl1.Controls.Add(this.createOrderTab);
             this.tabControl1.Controls.Add(this.viewOrdersTab);
-            this.tabControl1.Location = new System.Drawing.Point(12, 136);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(864, 481);
+            this.tabControl1.Size = new System.Drawing.Size(888, 632);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -186,10 +187,10 @@
             this.inventaryTab.Controls.Add(this.groupBox2);
             this.inventaryTab.Controls.Add(this.groupBox1);
             this.inventaryTab.Controls.Add(this.dgvInventary);
-            this.inventaryTab.Location = new System.Drawing.Point(4, 25);
+            this.inventaryTab.Location = new System.Drawing.Point(4, 29);
             this.inventaryTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.inventaryTab.Name = "inventaryTab";
-            this.inventaryTab.Size = new System.Drawing.Size(856, 452);
+            this.inventaryTab.Size = new System.Drawing.Size(880, 599);
             this.inventaryTab.TabIndex = 2;
             this.inventaryTab.Text = "Inventario";
             this.inventaryTab.UseVisualStyleBackColor = true;
@@ -208,7 +209,7 @@
             this.groupBox3.Size = new System.Drawing.Size(236, 131);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Eliminar producto";
+            this.groupBox3.Text = "Actualizar inventario";
             // 
             // bttnUpdateStockInventary
             // 
@@ -411,10 +412,10 @@
             // createOrderTab
             // 
             this.createOrderTab.Controls.Add(this.groupBox4);
-            this.createOrderTab.Location = new System.Drawing.Point(4, 25);
+            this.createOrderTab.Location = new System.Drawing.Point(4, 29);
             this.createOrderTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.createOrderTab.Name = "createOrderTab";
-            this.createOrderTab.Size = new System.Drawing.Size(856, 452);
+            this.createOrderTab.Size = new System.Drawing.Size(880, 599);
             this.createOrderTab.TabIndex = 4;
             this.createOrderTab.Text = "Hacer pedido/Ver mis pedidos";
             this.createOrderTab.UseVisualStyleBackColor = true;

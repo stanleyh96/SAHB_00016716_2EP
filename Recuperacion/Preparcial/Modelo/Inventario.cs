@@ -4,15 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Preparcial.Modelo
 {
     public class Inventario
     {
-        string idArticulo { get; }
-        string producto { get; }
-        string descripcion { get; }
-        string precio { get; }
-        string stock { get; }
+        //correpcion : modificando de privados a publicos los atributos
+        public string idArticulo { get; set; }
+        public string producto { get; set; }
+        public string descripcion { get; set; }
+        public string precio { get; set; }
+        public string stock { get; set; }
 
         public Inventario(string idArticulo, string producto, string descripcion, string precio, string stock)
         {
